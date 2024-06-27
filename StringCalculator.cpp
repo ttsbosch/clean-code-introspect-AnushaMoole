@@ -10,13 +10,17 @@ int StringCalculator::add(string input){
 }
 
 int StringCalculator::addNum(string input){     
-    std::stringstream ss(input);
-    std::string token;
-    std::string delim = ",;\n*\t/";
+    std::string delimiters = ",;\n*\t/";
     int sum = 0;
+    std::string numberStr = 0;
+    size_t startPos = 0;
+    size_t endPos = 0;
 
-    while (std::getline(ss, token, delim)) {
-        sum += std::stoi(token);
+    while (endPos != std::string::npos) {
+        endPos = input.find_first_of(delimiters, startPos);
+        numberStr = input.substr(startPos, endPos - startPos);
+        sum += std::stoi(numberStr);
+        startPos = endPos + 1;
     }
     return sum;
 }
