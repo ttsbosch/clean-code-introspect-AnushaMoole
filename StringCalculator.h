@@ -7,5 +7,5 @@ using namespace std;
 class StringCalculator{
     public:
     int add(string input);
-    std::vector getNum(string input)
+    std::vector<int> getNum(string input)
 };
