@@ -5,5 +5,5 @@ using namespace std;
 class StringCalculator{
     public:
     int add(string input);
-    int getNum(string input);
+    vector getNum(string input)
 };
