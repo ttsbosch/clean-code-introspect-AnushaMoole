@@ -17,7 +17,7 @@ int StringCalculator::add(string input){
     return sum;
 }
 
-std::vector StringCalculator::getNum(string input){
+std::vector<int> StringCalculator::getNum(string input){
     std::vector<int> nums;
     std::stringstream ss(input);
     std::string token;
