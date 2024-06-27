@@ -8,7 +8,7 @@ int StringCalculator::add(string input){
         return 0;
 
     std::vector<int> nums;
-    std::stringstream ss(numbers);
+    std::stringstream ss(nums);
     std::string token;
 
     while (std::getline(ss, token, ',')) {
@@ -37,4 +37,4 @@ int StringCalculator::add(string input){
 //         startPos = endPos + 1;
 //     }
 //     return sum;
-}
+//}
