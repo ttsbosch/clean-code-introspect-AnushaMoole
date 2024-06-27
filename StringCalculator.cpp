@@ -20,7 +20,8 @@ int StringCalculator::getNum(string input){
         nums.push_back(std::stoi(token));
     }
     for (int num : nums) {
-        sum += num;
+       if(num > 0)
+            sum += num;
     }
     return sum;
 }
