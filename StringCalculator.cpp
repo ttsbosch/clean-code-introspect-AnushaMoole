@@ -21,7 +21,7 @@ std::vector<int> StringCalculator::getNum(string input){
     std::stringstream ss(input);
     std::string token;
         
-    while (std::getline(ss, token, ',\n')) {
+    while ((std::getline(ss, token, ',')) || (std::getline(ss, token, '\n'))) {
               nums.push_back(std::stoi(token));
     }
     return nums;
