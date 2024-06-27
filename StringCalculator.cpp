@@ -12,9 +12,10 @@ int StringCalculator::add(string input){
 int StringCalculator::addNum(string input){     
     std::stringstream ss(input);
     std::string token;
+    std::string delim = ",;\n*\t/";
     int sum = 0;
 
-    while (std::getline(ss, token, ',;\n*\t/')) {
+    while (std::getline(ss, token, delim)) {
         sum += std::stoi(token);
     }
     return sum;
