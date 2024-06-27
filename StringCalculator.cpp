@@ -10,7 +10,7 @@ int StringCalculator::add(string input){
         std::vector<int> nums = getNum(input);
         //std::vector<int> vectors = removeNegative(nums);
         
-        int sum = accumulate(vectors);
+        int sum = accumulate(nums);
 
     }
     return sum;
@@ -27,7 +27,8 @@ std::vector<int> StringCalculator::getNum(string input){
     return nums;
 }
 
-int StringCalculator::accumulate(std::vector<int> vectors){
+int StringCalculator::accumulate(std::vector<int> nums){
+        int sum = 0;
         for (int num : nums) {
           if(num >= 0)
             sum += num;
