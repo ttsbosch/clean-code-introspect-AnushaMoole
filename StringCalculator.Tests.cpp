@@ -27,7 +27,7 @@ TEST(StringCalculatorAddTests, ExpectSumForTwoNumbers) {
 
     ASSERT_EQ(result, expectedresult);
 }
-/*
+
 TEST(StringCalculatorAddTests, ExpectExceptionForNegativeNumbers) {
     ASSERT_THROW({
         std::string input = "-1,2";
