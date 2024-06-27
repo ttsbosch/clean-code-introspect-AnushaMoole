@@ -10,7 +10,7 @@ int StringCalculator::add(string input){
 
     // return sum;
             std::vector<int> nums;
-    std::stringstream ss(numbers);
+    std::stringstream ss(input);
     std::string token;
 
     while (std::getline(ss, token, ',')) {
