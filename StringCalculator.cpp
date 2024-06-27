@@ -10,6 +10,11 @@ int StringCalculator::add(string input){
         std::vector<int> nums = getNum(input);
         //std::vector<int> vectors = removeNegative(nums);
         
+        for (int num : nums) {
+            if(num < 0)
+                    throw nthrow invalid_argument("Negatives not allowed: ");
+        }
+        
         int sum = accumulate(nums);
         return sum;
 }
@@ -28,7 +33,6 @@ std::vector<int> StringCalculator::getNum(string input){
 int StringCalculator::accumulate(std::vector<int> nums){
         int sum = 0;
         for (int num : nums) {
-          if(num >= 0)
             sum += num;
         }
         return sum;
