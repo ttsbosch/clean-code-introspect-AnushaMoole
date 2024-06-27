@@ -12,7 +12,7 @@ int StringCalculator::add(string input){
         
         for (int num : nums) {
             if(num < 0)
-                    throw nthrow invalid_argument("Negatives not allowed: ");
+                    throw invalid_argument("Negatives not allowed: ");
         }
         
         int sum = accumulate(nums);
