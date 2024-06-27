@@ -6,7 +6,7 @@ int StringCalculator::add(string input){
         if((input == "") || (input == "0"))
         return 0;
         else
-                addNum(input);
+        return addNum(input);
 }
 
 int StringCalculator::addNum(string input){     
