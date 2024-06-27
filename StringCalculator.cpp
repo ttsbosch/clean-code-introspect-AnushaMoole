@@ -7,7 +7,7 @@ int StringCalculator::add(string input){
                 addNum(input);
 }
 
-int StringCalculator::add(string input){
+int StringCalculator::addNum(string input){
     std::string delimiters = ",;\n*\t/";
     std::string token;
     size_t pos = 0;
