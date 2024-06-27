@@ -8,8 +8,9 @@ int StringCalculator::add(string input){
         if((input == "") || (input == "0"))
         return 0;
 
-    std::vector<int> nums;
-    std::stringstream ss(nums);
+    // return sum;
+            std::vector<int> nums;
+    std::stringstream ss(numbers);
     std::string token;
 
     while (std::getline(ss, token, ',')) {
@@ -21,7 +22,6 @@ int StringCalculator::add(string input){
         sum += num;
     }
 
-    return sum;
 }
 
 // int StringCalculator::addNum(string input){     
