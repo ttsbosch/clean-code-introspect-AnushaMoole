@@ -22,7 +22,7 @@ std::vector<int> StringCalculator::getNum(string input){
     std::string token;
         
     while (std::getline(ss, token, ',')) {
-            if(token >=0)
+            if(std::stoi(token) >=0)
               nums.push_back(std::stoi(token));
     }
     return nums;
