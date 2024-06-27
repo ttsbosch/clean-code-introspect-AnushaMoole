@@ -1,4 +1,5 @@
 #include "StringCalculator.h"
+#include "string"
 
 int StringCalculator::add(string input){
         if((input == "") || (input == "0"))
