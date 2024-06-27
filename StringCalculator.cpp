@@ -38,7 +38,7 @@ int StringCalculator::accumulate(std::vector<int> nums){
 void StringCalculator::checkNegaiveNumber(std::vector<int> nums){
         for (int num : nums) {
             if(num < 0)
-                    throw invalid_argument("Negatives not allowed: ");
+                    throw runtime_error;
         }
 }
 
