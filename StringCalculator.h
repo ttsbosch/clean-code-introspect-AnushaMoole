@@ -1,9 +1,11 @@
 #include<iostream>
 #include<string>
+#include<vector>
 
 using namespace std;
+
 class StringCalculator{
     public:
     int add(string input);
-    vector getNum(string input)
+    std::vector getNum(string input)
 };
