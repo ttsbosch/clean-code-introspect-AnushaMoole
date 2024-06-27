@@ -11,7 +11,6 @@ int StringCalculator::add(string input){
         int sum = 0;
         
         for (int num : nums) {
-         if(num > 0)
             sum += num;
     }
     return sum;
@@ -23,7 +22,8 @@ std::vector<int> StringCalculator::getNum(string input){
     std::string token;
         
     while (std::getline(ss, token, ',')) {
-        nums.push_back(std::stoi(token));
+            if(token >=0)
+              nums.push_back(std::stoi(token));
     }
     return nums;
 }
