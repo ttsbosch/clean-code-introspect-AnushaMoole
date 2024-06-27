@@ -16,7 +16,7 @@ int StringCalculator::addNum(string input){
     int num = 0;
     while ((pos = input.find_first_of(delimiters, pos)) != std::string::npos) {
         token = input.substr(0, pos);
-        num = str::stoi(token);
+        num = std::stoi(token);
         input.erase(0, pos + 1); // Remove the delimiter and the extracted token
         pos = 0; // Reset the position for the next search
         sum += num;
