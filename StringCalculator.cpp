@@ -11,9 +11,7 @@ int StringCalculator::add(string input){
         //std::vector<int> vectors = removeNegative(nums);
         
         int sum = accumulate(nums);
-
-    }
-    return sum;
+        return sum;
 }
 
 std::vector<int> StringCalculator::getNum(string input){
