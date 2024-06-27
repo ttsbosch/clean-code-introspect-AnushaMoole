@@ -28,7 +28,7 @@ std::vector<int> StringCalculator::getNum(string input){
     return nums;
 }
 
-std::vector<int> vectors = removeNegative(std::vector<int> nums){
+std::vector<int> StringCalculator::removeNegative(std::vector<int> nums){
      std::vector<int> newArr;
      for (auto x : nums) {
         if (x >= 0) {
